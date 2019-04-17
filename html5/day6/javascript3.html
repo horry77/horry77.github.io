@@ -1,0 +1,76 @@
+<html>
+<head>
+<style>
+body 
+{background: lightblue;
+}
+.contact-form {
+max-width:350px;
+margin:auto;
+broder-radius:5px;
+background:#96bb72;
+padding:20px;
+}
+input[type=text], input[type=submit],input[type=reset],select {
+width:100%;
+padding:12px 20px;
+margin:8px 0;
+border:none;
+border-radius:4px;
+cursor:pointer;
+}
+
+input[type=submit]:hover{
+background:purple;
+}
+input[type=reset]:hover{
+background:purple;
+}
+</style>
+   <SCRIPT language=JavaScript>
+	
+	var f_selbox = new Array('amd', 'intel');
+
+	var s_selbox = new Array();
+	s_selbox[0] = new Array('ryzen 3 2200g (81600)', 'ryzen 5 2400g (145600)', 'ryzen 5 2600 (162800)', 'ryzen 5 2600x (222800)', 'ryzen 7 2700 (262300)','ryzen 7 2700x(321100)','ryzen 5 1600 (157000)','ryzen threadripper 2920x (762000)','ryzen 7 1700 (247900)','ryzen threadripper 1900x (369900)');
+	s_selbox[1] = new Array('intel pentium gold g5400', 'intel i7-8700 (401600) ', 'intel i5-9400f (188600)','intel i5-9600k (280000)','intel i5-8500 (236700)','intel i7-9700k (553000)','intel i9-9900k (670000)','intel i3-8100 (185000)','intel i7-8700k (590000)','intel i5-8400k (254600)');
+
+	function init(f){
+		var f_sel = f.first;
+		var s_sel = f.second;
+		f_sel.options[0] = new Option("선택", "");
+		s_sel.options[0] = new Option("선택", "");
+		for(var i =0; i<f_selbox.length; i++){
+			f_sel.options[i+1] = new Option(f_selbox[i], f_selbox[i]);
+		}
+	}
+	function itemChange(f){
+		var f_sel = f.first;
+		var s_sel = f.second;
+		var sel = f_sel.selectedIndex;
+		for(var i=s_sel.length; i>=0; i--){
+			s_sel.options[i] = null;
+		}
+		s_sel.options[0] = new Option("선택", "");
+		if(sel != 0){
+			for(var i=0; i<s_selbox[sel-1].length; i++){
+				s_sel.options[i+1] = new Option(s_selbox[sel-1][i], s_selbox[sel-1][i]);
+			}
+		}
+	}
+   </SCRIPT>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+</head>
+<body onload = "init(this.form);">	
+<div class = "contact-form">
+	<form name="form">
+		<select id="first"  onchange="itemChange(this.form);" ></select>
+		<select id="second"  ></select>
+		<input type="reset" value="취소">
+				<input type="submit" value="submit">
+	</form>
+</div>
+</body>
+</html>
