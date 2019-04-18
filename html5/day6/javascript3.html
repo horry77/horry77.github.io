@@ -1,3 +1,4 @@
+
 <html>
 <head>
 <style>
@@ -65,9 +66,9 @@ background:purple;
 </head>
 <body onload = "init(this.form);">	
 <div class = "contact-form">
-	<form name="form">
-		<select id="first"  onchange="itemChange(this.form);" ></select>
-		<select id="second"  ></select>
+	<form name="form" method="post" action="https://horry77.github.io/html5/day6/result.jsp">
+		<select id="first" name="first1" onchange="itemChange(this.form);" ></select>
+		<select id="second"  name="second1"></select>
 		<input type="reset" value="취소">
 				<input type="submit" value="submit">
 	</form>
