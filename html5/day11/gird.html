@@ -1,0 +1,49 @@
+<html> <head> <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article ads"
+    "footer footer footer";
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-columns: 20% 1fr 20%;
+  grid-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }
+#pageHeader {
+  grid-area: header;
+  border:3px solid gray;  
+
+}
+#pageFooter {
+  grid-area: footer;border:3px solid gray;  
+
+}
+#mainArticle { 
+  grid-area: article;border:3px solid gray;  
+      
+  }
+#mainNav { 
+  grid-area: nav; border:3px solid gray;  
+
+  }
+#siteAds { 
+  grid-area: ads; border:3px solid gray;  
+
+  }
+header, footer, article, nav, div {
+  padding: 20px;
+  background: white;border:3px solid gray;  
+
+}
+</style>
+<body>
+  <header id="pageHeader">Header</header>
+  <article id="mainArticle">Article</article>
+  <nav id="mainNav">Nav</nav>
+  <div id="siteAds">Ads</div>
+  <footer id="pageFooter">Footer</footer>
+</body>
+</html>
