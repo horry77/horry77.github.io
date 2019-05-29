@@ -1,0 +1,80 @@
+
+<!DOCTYPE html><!--whileTest.html -->
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<title>웹 프로그래밍 실습</title>
+	
+	<style>
+		body{
+			font-family: Verdana, sans-serif;
+			font-size: 0.8em;
+		}
+		header, nav, section, article, footer{
+			border: 1px solid #666;
+			margin: 5px;
+			padding: 8px;
+		}
+		section#displayArea{
+			height: 210px;
+		}
+		nav ul{
+			margin: 0;
+			padding: 0;
+		}
+		nav ul li{
+			display: inline;
+			margin: 5px;
+		}
+		a{
+			text-decoration: none;
+		}
+		#id_form{
+			width: 100px;
+			height: 14px;
+			color: red;
+		}
+	</style>
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+	
+<body>
+	<header>
+		<h2>실습 대환영</h2>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="http://hive.dju.ac.kr">실습서버</a></li>
+		</ul>
+	</nav>
+	<section>
+		<h4>for 예제 실습</h4>
+		<script>
+			var i = 0;
+			var name = ["홍길동", "이몽룡", "변학도", "손오공", "저팔계"];
+			while(i<name.length){
+				document.write(name[i]);
+				if((i+1)%4 == 0){
+					document.write("<br>");
+				}
+				i++;
+			}
+			document.write("<br>");
+			
+			i = 0;
+			var sum = 0;
+			var data = [10, 13, 15, 17, 29, 11, 13, 14, 21, 34];
+			while(i<data.length){
+				sum = sum + data[i];
+				i++;
+			}
+			document.write("합계 = "+sum+"<br>");
+		</script>
+	</section>
+	<footer>
+	<p>&copy; 20XX Made by Korea. All rights reserved.</p></footer>
+</body>
+</html>
