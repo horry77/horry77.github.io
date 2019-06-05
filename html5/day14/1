@@ -1,0 +1,19 @@
+<li id="week13">13주 20190530
+   <ol>
+    <li><a href="20190530/funcArgTest.html" target="_blank"> [ funcArgTest ]</a></li>
+     <li><a href="20190530/funcTest.html" target="_blank"> [ funcTest ]</a></li>
+     <li><a href="20190530/getChildNodes.html" target="_blank"> [ getChildNodes ]</a></li>
+     <li><a href="20190530/getElementById.html" target="_blank"> [ getElementById ]</a></li>
+     <li><a href="20190530/getElementsByDOM.html" target="_blank"> [ getElementsByDOM ]</a></li>
+     <li><a href="20190530/getElementsByName.html" target="_blank"> [ getElementsByName ]</a></li>
+     <li><a href="20190530/getElementsByTagName.html" target="_blank"> [ getElementsByTagName ]</a></li>
+     <li><a href="20190530/getSetAttribute.html" target="_blank"> [ getSetAttribute ]</a></li>
+     <li><a href="20190530/getSetInnerHTML.html" target="_blank"> [ getSetInnerHTML ]</a></li>
+     <li><a href="20190530/getSetNodeValue.html" target="_blank"> [ getSetNodeValue ]</a></li>
+     <li><a href="20190530/htmlDom.html" target="_blank"> [ htmlDom ]</a></li>
+     <li><a href="20190530/sampleAllMod.html" target="_blank"> [ sampleAllMod ]</a></li>
+     <li><a href="20190530/onClickClassicHandler.html" target="_blank"> [ onClickClassicHandler ]</a></li>
+     <li><a href="20190530/onClickHandler.html" target="_blank"> [ onClickHandler ]</a></li>
+      </ol>
+   
+   </li>
