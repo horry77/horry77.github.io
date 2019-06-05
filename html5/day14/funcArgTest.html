@@ -1,0 +1,25 @@
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="sample.css"><script src="sample.js"></script>
+<title>웹 프로그래밍 실습</title></head>
+<body><header><h2>실습 대환영</h2></header>
+<nav><ul><li><a href="http://hive.dju.ac.kr">실습서버</a></li></ul></nav>
+<section><h4>가변 인자 함수 실습</h4>
+<script>
+function sumy() {
+var result=0;
+for(var i=0; i<arguments.length; i++) {
+result=result+arguments[i];
+}
+return result;
+}
+function printValue() {
+for(var i in arguments)
+document.write(arguments[i],"<br/>");
+}
+var value=sumy(10,20,30);
+printValue(value);
+printValue("a",10,15,"v");
+</script>60<br>a<br>10<br>15<br>v<br></section>
+<footer><p>© 20XX Made by Korea. All rights reserved. </p></footer>
+</body></html>
